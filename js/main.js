@@ -36,7 +36,7 @@ for (let i = 0 ; i < images.length ; i++) {
   <img
     class="img-fluid"
     src="./${curImages.image}"
-    alt="Marvel's Spiderman Miles Morale picture"
+    alt="${curImages.title}"
   />
   <div class="item-description px-3">
     <h2>${curImages.title}</h2>
@@ -57,7 +57,7 @@ document.querySelector(".my-next-hook").addEventListener("click", function(){
   
   slider[activeIndex].classList.remove("active");
 
-  if (activeIndex < images.length - 1) {
+  if (activeIndex < images.length - 1) { //avrei potuto usare slider.lenght 
     activeIndex++;
   } else {
     activeIndex = 0;
